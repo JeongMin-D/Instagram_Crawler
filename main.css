@@ -11,7 +11,7 @@ body {
     text-align: justify;
     line-height: 2.0em;
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 2em 2em 4em;
 }
 
@@ -46,6 +46,10 @@ th, td
 
 h2 {
     margin-top: 1.3em;
+}
+
+h6 {
+    font-size : 12px;
 }
 
 a {
