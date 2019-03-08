@@ -2,19 +2,18 @@
 <html>
     <head>
     <meta charset="utf-8">
-    <title>source</title>
+    <title>NLP</title>
 </head>
 
 <body>
 <h1> <strong>데이터 전처리 코드</strong></h1>
 
-<button onclick="window.location.href='https://jeongmin-d.github.io/Instagram_Crawler/'">메인 페이지로</button>
+<h2><button onclick="window.location.href='https://jeongmin-d.github.io/Instagram_Crawler/'">메인 페이지로</button></h2><br>
+<br>
 
 
 
+<img src="NLP.png" width="1024px">
 
-<iframe
-  src="https://carbon.now.sh/embed/?bg=rgba(169%2C179%2C188%2C1)&t=seti&wt=none&l=python&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fm=Hack&fs=14px&lh=133%25&si=false&code=import%2520re%250Aimport%2520string%250Aimport%2520csv%250A%250Af%2520%253D%2520open('test2.csv'%252C%2520'r'%252C%2520encoding%253D'utf-8-sig'%252C%2520%2520newline%253D'')%250Atitle%2520%253D%2520f.read()%250Af.close()%250A%250Atitle_replace%2520%253D%2520title.replace('%252C'%252C%2520'').replace('%253F'%252C'').replace('%25E2%2580%259C'%252C'').replace('%253A'%252C'').replace('.'%252C'').replace(%2522%25E2%2580%2598%2522%252C'').replace(%2522%25E2%2580%2599%2522%252C'').replace('%25E2%2580%259D'%252C'').replace('%2525'%252C'').replace(%2522'%2522%252C'').replace('%2522'%252C'').replace('%2523'%252C'')%250Atitle_split%2520%253D%2520title_replace.split()%250Atitle_list%2520%253D%2520list(title_split)%250Atitle_set%2520%253D%2520set(title_list)%250Atitle_word_count%2520%253D%2520%255B%255D%250Afor%2520title_word%2520in%2520title_set%253A%250A%2520%2520%2520%2520title_word_count.append((title_list.count(title_word)%252Ctitle_word))%250A%2520%2520%2520%2520n%2520%253D%25200%250Afor%2520result%2520in%2520sorted(title_word_count%252C%2520reverse%253DTrue)%253A%250A%2520%2520%2520%2520n%2520%252B%253D%25201%250A%2520%2520%2520%2520print(result%255B1%255D%252C%2520'%253A'%252C%2520result%255B0%255D)%250A%250Af%2520%253D%2520open('bucks.csv'%252C%2520'w'%252C%2520encoding%253D'utf-8-sig'%252C%2520newline%253D'')%250A%250Acsv_writer%2520%253D%2520csv.writer(f)%250A%250Atitle_word_count%2520%253D%2520%255B%255D%250A%250Afor%2520title_word%2520in%2520title_set%253A%250A%2520%2520%2520%2520title_word_count.append((title_list.count(title_word)%252Ctitle_word))%250A%2520%2520%2520%2520n%2520%253D%25200%250A%250Afor%2520result%2520in%2520sorted(title_word_count%252C%2520reverse%253DTrue)%253A%250A%2520%2520%2520%2520n%2520%252B%253D%25201%250A%2520%2520%2520%2520print(result%255B1%255D%252C%2520'%253A'%252C%2520result%255B0%255D)%250A%2520%2520%2520%2520if%2520result%255B0%255D%2520%253E%253D%25202%253A%250A%2520%2520%2520%2520%2520%2520%2520%2520csv_writer.writerow(%255Bresult%255B1%255D%252C%2520result%255B0%255D%255D)%250A%250Af.close()&es=2x&wm=false"
-  style="transform:scale(0.7); width:1024px; height:1024px; border:0; overflow:hidden;"
-  sandbox="allow-scripts allow-same-origin">
-</iframe>
+</body>
+</html>
